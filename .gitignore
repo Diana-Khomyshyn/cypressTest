@@ -1,0 +1,6 @@
+/cypress/videos/*
+/cypress/screenshots
+node_modules
+/.vscode
+/cypress/downloads
+/cypress/reports
