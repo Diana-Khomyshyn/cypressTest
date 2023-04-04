@@ -17,8 +17,8 @@
     "test": "npx cypress run",
     "clean-reports": "rmdir /S /Q cypress\\reports && mkdir cypress\\reports && mkdir cypress\\reports\\mochareports",
     "generate-report": "npx mochawesome-report-generator --reportDir cypress/reports cypress/reports/full_report.json",
-    "merge-report1": "mochawesome-merge cypress/reports/mochareports/.json -o cypress/reports/report.json",
-    "after:tests": "npm run merge-report1; npm run generate-report",
-    "cypress": "npm run clean-reports; npm run test; npm run after:tests"
+    "merge-report": "mochawesome-merge cypress/reports/mochareports/.json -o cypress/reports/report.json",
+    "after:tests": "npm run merge-report && npm run generate-report",
+    "cypress": "npm run clean-reports && npm run test && npm run after:tests"
   }
 }
