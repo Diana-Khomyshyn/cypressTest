@@ -10,5 +10,5 @@ jobs:
      - name: Run Cypress Test
        uses: cypress-io/github-action@v5
        with:
-         command: npm run clean-reports; npm run test; npm run after:tests
+         command: npx cypress run
          browser: chrome
