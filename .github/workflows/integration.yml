@@ -24,5 +24,5 @@ jobs:
         if: always()
         with:
           name: cypress-execution-report
-          path: cypress/report/html
+          path: cypress/reports/mochawesome-reports/.jsons
           retention-days: 30
